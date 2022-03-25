@@ -1,0 +1,11 @@
+:root{
+  --primary-color: #dce3ea;
+  --primary-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+
+body{
+  border-radius: 50px;
+  background: var(--primary-color);
+
+}
