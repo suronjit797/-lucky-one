@@ -72,9 +72,8 @@ const Shop = () => {
                             ))
                         }
                     </div>
-
                 </div>
-                <div className='col-sm-12, col-md-5 col-lg-4'>
+                <div className='col-sm-12, col-md-5 col-lg-4 mt-sm-5'>
                     <SelectedItems
                         cart={cart}
                         chooseOneHandler={chooseOneHandler}

@@ -17,7 +17,7 @@ const Card = ({ id, name, price, picture, company, addToCartHandler }) => {
                     <p>Price: <span className="text-blue">${price}</span></p>
                 </div>
 
-                <button className='btn btn-success' onClick={() =>addToCartHandler(id)}>
+                <button className='btn btn-success py-2' onClick={() =>addToCartHandler(id)}>
                     <span className="me-3">Add to cart</span>
                     <FontAwesomeIcon icon={faCartPlus} />
                 </button>

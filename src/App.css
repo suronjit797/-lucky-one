@@ -7,6 +7,9 @@
 body{
   border-radius: 50px;
   background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .text-blue{
