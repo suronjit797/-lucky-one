@@ -4,20 +4,36 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 import './SelectedItems.css'
 
-const SelectedItems = ({cart}) => {
+const SelectedItems = ({ cart, chooseOneHandler, chooseAgainHandler, deleteSingleHandler }) => {
     return (
         <div className='selectedCart py-5 px-4'>
             <h3 className="text-center"> Selected Items </h3>
             {
                 cart.map(product => (
-                    <div className='d-flex align-items-center my-2' key={product._id}>
+
+                    <div className='d-flex selectedCart-item align-items-center py-3' key={product._id}>
                         <img src={product.picture} className="me-2" alt={product.picture} />
-                        <p className="name me-auto"> {product.name} </p>
-                        <p> <FontAwesomeIcon icon={faTrash}/> </p>
+                        <p className="name me-auto mb-0"> {product.name} </p>
+                        <p
+                            className='selectedCart-remove mb-0'
+                            onClick={()=>{deleteSingleHandler(product._id)}}
+                        > <FontAwesomeIcon icon={faTrash} /> </p>
+
                     </div>
                 ))
             }
-            
+
+            <div className="mt-4">
+                <button
+                    className="d-block my-3 btn btn-outline-success chooseOn"
+                    onClick={chooseOneHandler}
+                >Choose 1 for me</button>
+                <button
+                    className="d-block my-3 btn btn-outline-danger chooseAgain"
+                    onClick={chooseAgainHandler}
+                >Choose Again</button>
+            </div>
+
         </div>
     );
 };

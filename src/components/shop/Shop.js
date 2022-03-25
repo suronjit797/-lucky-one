@@ -6,15 +6,18 @@ import SelectedItems from '../selectedItems/SelectedItems';
 
 const Shop = () => {
 
+    // state
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
 
+    // fetch product son
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
 
+    // addToCartHandler
     const addToCartHandler = id => {
         const cartProduct = products.find(product => product._id === id)
         const isInCart = cart.find(item => item._id === id)
@@ -29,8 +32,26 @@ const Shop = () => {
             alert('You can select only 4 items')
         }
     }
+    // chooseOneHandler
+    const chooseOneHandler = () => {
+        if (cart.length <= 1) {
+            alert('please select 2 or more items')
+        } else {
+            const random = Math.floor(Math.random() * cart.length)
+            let chosenOne = cart[random]
+            setCart([chosenOne])
+        }
+    }
+    // chooseAgainHandler
+    const chooseAgainHandler = () => {
+        setCart([])
+    }
 
-
+    // delete single items
+    const deleteSingleHandler = id => {
+        let remainItems = cart.filter(items => items._id !== id)
+        setCart(remainItems)
+    }
 
     return (
         <div className='py-5'>
@@ -51,11 +72,14 @@ const Shop = () => {
                             ))
                         }
                     </div>
-                    
+
                 </div>
                 <div className='col-sm-12, col-md-5 col-lg-4'>
                     <SelectedItems
                         cart={cart}
+                        chooseOneHandler={chooseOneHandler}
+                        chooseAgainHandler={chooseAgainHandler}
+                        deleteSingleHandler={deleteSingleHandler}
                     />
                 </div>
 

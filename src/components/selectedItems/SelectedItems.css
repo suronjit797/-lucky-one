@@ -7,4 +7,21 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: 2px solid black;
+}
+
+.selectedCart-remove{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    background-color: #e74d3c63;
+    cursor: pointer;
+}
+
+.selectedCart-item:not(:last-child){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
 }
