@@ -1,0 +1,10 @@
+.selectedCart{
+    background-color: #fff;
+    box-shadow: var(--primary-shadow);
+    border-radius: 5px;
+}
+.selectedCart img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
