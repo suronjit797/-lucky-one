@@ -15,3 +15,7 @@ body{
 .text-blue{
   color: #3498db;
 }
+
+.text-justify{
+  text-align: justify;
+}

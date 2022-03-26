@@ -1,0 +1,17 @@
+[
+    {
+        "_id":"623e8f758b12c5e34368c29d",
+        "question": "How react js works?",
+        "answer": "React work using virtual dom. JavaScript has to power to change dom. But react make 2 different type of dom. Actual dom and Virtual dom. React basically maintains a tree. This tree is able to do efficient diff computations on the actual dom and virtual dom. React allows to effectively re-construct the  DOM in JavaScript and push only those changes to the DOM which have actually occurred. React also use JSX to make its work easily. There's nothing like JSX - neither to JavaScript, nor to the browser. JSX is simply syntactic sugar for creating very specific JavaScript objects." 
+    },
+    {
+        "_id":"623e8f75b176d1954bb2531e",
+        "question": "Different between 'props' and 'states'?",
+        "answer": "State for store dynamic data and props for send data to his children"
+    },
+    {
+        "_id":"623e8f75a5d051078c179543",
+        "question": "How 'useState' works?",
+        "answer": "React work to save data"
+    }
+]
