@@ -25,11 +25,11 @@ const SelectedItems = ({ cart, chooseOneHandler, chooseAgainHandler, deleteSingl
 
             <div className="mt-4">
                 <button
-                    className="d-block my-3 btn btn-outline-success chooseOn"
+                    className="d-block my-3 btn w-100 btn-outline-success chooseOn"
                     onClick={chooseOneHandler}
                 >Choose 1 for me</button>
                 <button
-                    className="d-block my-3 btn btn-outline-danger chooseAgain"
+                    className="d-block my-3 btn w-100 btn-outline-danger chooseAgain"
                     onClick={chooseAgainHandler}
                 >Choose Again</button>
             </div>

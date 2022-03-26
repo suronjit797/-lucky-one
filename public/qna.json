@@ -1,17 +1,17 @@
 [
     {
-        "_id":"623e8f758b12c5e34368c29d",
+        "_id": "623e8f758b12c5e34368c29d",
         "question": "How react js works?",
-        "answer": "React work using virtual dom. JavaScript has to power to change dom. But react make 2 different type of dom. Actual dom and Virtual dom. React basically maintains a tree. This tree is able to do efficient diff computations on the actual dom and virtual dom. React allows to effectively re-construct the  DOM in JavaScript and push only those changes to the DOM which have actually occurred. React also use JSX to make its work easily. There's nothing like JSX - neither to JavaScript, nor to the browser. JSX is simply syntactic sugar for creating very specific JavaScript objects." 
+        "answer": "React work using virtual dom. JavaScript has to power to change dom. But react make 2 different type of dom. Actual dom and Virtual dom. React basically maintains a tree. This tree is able to do efficient diff computations on the actual dom and virtual dom. React allows to effectively re-construct the  DOM in JavaScript and push only those changes to the DOM which have actually occurred. React also use JSX to make its work easily. There's nothing like JSX - neither to JavaScript, nor to the browser. JSX is simply syntactic sugar for creating very specific JavaScript objects."
     },
     {
-        "_id":"623e8f75b176d1954bb2531e",
+        "_id": "623e8f75b176d1954bb2531e",
         "question": "Different between 'props' and 'states'?",
         "answer": "State for store dynamic data and props for send data to inside its components. Props are immutable and state are mutable. Props allow you to pass data from one component to other components as an argument. Props allow you to pass data from one component to other components as an argument. Props are used to communicate between components. States can be used for rendering dynamic changes with the component. Props make components reusable. Props are external and controlled by whatever renders the component. The State is internal and controlled by the React Component itself."
     },
     {
-        "_id":"623e8f75a5d051078c179543",
+        "_id": "623e8f75a5d051078c179543",
         "question": "How 'useState' works?",
-        "answer": "In functional components, React provide some special hooks to control react page easily"
+        "answer": "In functional components, React provide some special hooks to control react page easily. Hooks allow function components to have access to state and other React features. Hooks can only be called  top level inside React function components. the state can be any type "
     }
 ]
