@@ -7,11 +7,11 @@
     {
         "_id":"623e8f75b176d1954bb2531e",
         "question": "Different between 'props' and 'states'?",
-        "answer": "State for store dynamic data and props for send data to his children"
+        "answer": "State for store dynamic data and props for send data to inside its components. Props are immutable and state are mutable. Props allow you to pass data from one component to other components as an argument. Props allow you to pass data from one component to other components as an argument. Props are used to communicate between components. States can be used for rendering dynamic changes with the component. Props make components reusable. Props are external and controlled by whatever renders the component. The State is internal and controlled by the React Component itself."
     },
     {
         "_id":"623e8f75a5d051078c179543",
         "question": "How 'useState' works?",
-        "answer": "React work to save data"
+        "answer": "In functional components, React provide some special hooks to control react page easily"
     }
 ]
